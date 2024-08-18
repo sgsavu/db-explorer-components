@@ -1,0 +1,47 @@
+{
+  "name": "@sgsavu/mysql-visualizer-components",
+  "description": "Component library for the mysql-visualizer project frontend.",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/sgsavu",
+  "repository": {
+    "url": "https://github.com/sgsavu/mysql-visualizer-components"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "lint": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "subject",
+    "observable",
+    "subscriber"
+  ],
+  "author": "Jibreel Savu",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/react-vite": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.2.9",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
