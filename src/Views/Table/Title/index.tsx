@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "./index.module.css"
 import { Input } from "../../../Input"
+import React from "react"
 
 export type TitleProps = {
     onChange: (value: string) => void

@@ -1,5 +1,7 @@
+import React from "react"
 import { TABLE_LIST_ACTION, TableAction } from "../const"
 import styles from "./index.module.css"
+import { Button } from "../../../Button"
 
 export type TableListRowProps = {
     onTableAction: (data: TableAction) => void
@@ -12,16 +14,16 @@ export const TableListRow: React.FC<TableListRowProps> = ({
 }) => {
     return (
         <div className={styles.entry}>
-            <button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.SELECT, tableName })}>
+            <Button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.SELECT, tableName })}>
                 {tableName}
-            </button>
+            </Button>
             <div>
-                <button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.DUPLICATE, tableName })}>
+                <Button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.DUPLICATE, tableName })}>
                     ⎘
-                </button>
-                <button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.DELETE, tableName })}>
+                </Button>
+                <Button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.DELETE, tableName })}>
                     ❌
-                </button>
+                </Button>
             </div>
         </div>
     )

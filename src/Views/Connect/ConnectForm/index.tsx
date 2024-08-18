@@ -2,6 +2,7 @@ import { FormEventHandler } from "react"
 import { Field } from "./Field"
 import { SQLConnectionInfo } from "./const"
 import React from "react"
+import { Button } from "../../../Button"
 
 export type ConnectFormProps = {
     onConnect: (connectionInfo: SQLConnectionInfo) => void
@@ -64,7 +65,7 @@ export const ConnectForm: React.FC<ConnectFormProps> = ({ onConnect }) => {
                 />
 
                 <div>
-                    <button type='submit'>Connect</button>
+                    <Button type='submit'>Connect</Button>
                 </div>
             </form>
         </>

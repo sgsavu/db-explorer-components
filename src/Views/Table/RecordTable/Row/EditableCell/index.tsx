@@ -2,6 +2,7 @@ import { useState } from "react"
 import tableStyles from "../../index.module.css"
 import styles from "./index.module.css"
 import { Input } from "../../../../../Input"
+import React from "react"
 
 type Props = {
     onEdit?: (newValue: string) => void

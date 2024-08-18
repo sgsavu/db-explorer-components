@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn, within, expect } from '@storybook/test';
+import { fn } from '@storybook/test';
 import { Connect } from './index';
 
 const meta = {
-  title: 'Views/Connect',
+  title: 'Connect',
   component: Connect,
   parameters: {
     layout: 'centered',

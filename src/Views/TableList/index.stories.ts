@@ -1,20 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn, within, expect } from '@storybook/test';
-import { ConnectForm } from './index';
+import { fn } from '@storybook/test';
+import { TableList } from './index';
 
 const meta = {
-  title: 'Views/Connect/ConnectForm',
-  component: ConnectForm,
+  title: 'TableList',
+  component: TableList,
   parameters: {
     layout: 'centered',
   }
-} satisfies Meta<typeof ConnectForm>;
+} satisfies Meta<typeof TableList>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: { 
-    onConnect: fn() 
+    onTableAction: fn(),
+    tables: ['Table1', 'Table2', 'Table3']
   }
 };

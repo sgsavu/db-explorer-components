@@ -2,6 +2,7 @@ import { EditableCell } from "./EditableCell"
 import tableStyles from "../index.module.css"
 import styles from "./index.module.css"
 import { RECORD_TABLE_ACTION, RecordAction } from "../consts"
+import React from "react"
 
 type Props = {
     onRowAction: (action: RecordAction) => void
