@@ -1,6 +1,7 @@
 import React from "react"
 import { ConnectFormProps } from "../ConnectForm"
 import { RecentSQLConnectionInfo } from "./const"
+import { Button } from "../../../Button"
 
 export type RecentConnectionsProps = {
     onConnect: ConnectFormProps["onConnect"]
@@ -24,7 +25,7 @@ export const RecentConnections: React.FC<RecentConnectionsProps> = ({
         <>
             <h3>Recent connections</h3>
             {recentConnections.map(login =>
-                <button
+                <Button
                     key={login.id}
                     onClick={() => onRecentLogin(login)}
                 >
@@ -37,7 +38,7 @@ export const RecentConnections: React.FC<RecentConnectionsProps> = ({
                     {login.password[0]}
                     {login.password[1]}
                     {"*".repeat(login.password.length - 2)}
-                </button>
+                </Button>
             )}
         </>
     )
