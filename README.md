@@ -1,3 +1,3 @@
-# MySQL Visualizer Components
+# DB Explorer Components
 
-Component library for the mysql-visualizer project frontend.
+Component library for the db-explorer project frontend.

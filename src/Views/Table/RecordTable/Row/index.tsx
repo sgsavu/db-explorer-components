@@ -1,6 +1,4 @@
 import { EditableCell } from "./EditableCell"
-import tableStyles from "../index.module.css"
-import styles from "./index.module.css"
 import { RECORD_TABLE_ACTION, RecordAction } from "../consts"
 import React from "react"
 
@@ -25,12 +23,12 @@ export const Row: React.FC<Props> = ({
                     value={value}
                 />
             )}
-            <td className={tableStyles.hoverableCell} onClick={() => onRowAction({ action: RECORD_TABLE_ACTION.DUPLICATE, record: row})}>
-                <div className={styles.duplicateButton}>
+            <td className="db-explorer-hoverable-cell" onClick={() => onRowAction({ action: RECORD_TABLE_ACTION.DUPLICATE, record: row})}>
+                <div className="db-explorer-duplicate-button">
                     ⎘
                 </div>
             </td>
-            <td className={tableStyles.hoverableCell} onClick={() => onRowAction({ action: RECORD_TABLE_ACTION.DELETE, record: row})}>
+            <td className="db-explorer-hoverable-cell" onClick={() => onRowAction({ action: RECORD_TABLE_ACTION.DELETE, record: row})}>
                 ❌
             </td>
         </tr>

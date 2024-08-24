@@ -1,7 +1,6 @@
-import { useState } from "react"
-import styles from "./index.module.css"
-import { Input } from "../../../Input"
 import React from "react"
+import { useState } from "react"
+import { Input } from "../../../Input"
 
 export type TitleProps = {
     onChange: (value: string) => void
@@ -48,7 +47,7 @@ export const Title: React.FC<TitleProps> = ({ onChange, tableName }) => {
                     />
                 )
                 : (
-                    <div className={styles.value} onClick={() => setIsEditing(true)}>
+                    <div className="db-explorer-title-value" onClick={() => setIsEditing(true)}>
                         {tableName}
                     </div>
                 )

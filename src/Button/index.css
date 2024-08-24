@@ -1,4 +1,4 @@
-.mysql-visualizer-button {
+.db-explorer-button {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.3em 0.6em;
@@ -10,11 +10,11 @@
     transition: border-color 0.25s;
 }
 
-.mysql-visualizer-button:hover {
+.db-explorer-button:hover {
     border-color: #646cff;
 }
 
-.mysql-visualizer-button:focus,
-.mysql-visualizer-button:focus-visible {
+.db-explorer-button:focus,
+.db-explorer-button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }

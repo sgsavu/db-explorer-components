@@ -13,7 +13,7 @@ export const Connect: React.FC<ConnectProps> = ({
 }) => {
     return (
         <>
-            <h1>MySQL Visualizer</h1>
+            <h1>DB Explorer</h1>
 
             <ConnectForm
                 onConnect={onConnect}

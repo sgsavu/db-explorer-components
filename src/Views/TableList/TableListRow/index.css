@@ -1,5 +1,4 @@
-.container {
+.db-explorer-table-row {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import { TABLE_LIST_ACTION, TableAction } from "../const"
-import styles from "./index.module.css"
 import { Button } from "../../../Button"
 
 export type TableListRowProps = {
@@ -13,7 +12,7 @@ export const TableListRow: React.FC<TableListRowProps> = ({
     tableName
 }) => {
     return (
-        <div className={styles.entry}>
+        <div className="db-explorer-table-row">
             <Button onClick={() => onTableAction({ action: TABLE_LIST_ACTION.SELECT, tableName })}>
                 {tableName}
             </Button>

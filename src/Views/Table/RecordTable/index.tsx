@@ -1,7 +1,6 @@
 import { useMemo, useState, useRef, FormEvent } from "react"
 import { RECORD_TABLE_ACTION, RecordAction, SORT_MODE } from "./consts"
 import { useSorting } from "./hooks"
-import styles from "./index.module.css"
 import { Row } from "./Row"
 import React from "react"
 
@@ -107,7 +106,7 @@ export const RecordTable: React.FC<Props> = ({
                                     />
                                 </td>
                             )}
-                            <td className={styles.hoverableCell} onClick={() => setFilters({})}>
+                            <td className="db-explorer-hoverable-cell" onClick={() => setFilters({})}>
                                 Reset
                             </td>
                         </tr>
@@ -128,7 +127,7 @@ export const RecordTable: React.FC<Props> = ({
                                     <input id={column} name={column} required />
                                 </td>
                             )}
-                            <td className={styles.hoverableCell} onClick={onSubmit}>
+                            <td className="db-explorer-hoverable-cell" onClick={onSubmit}>
                                 +
                             </td>
                         </tr>

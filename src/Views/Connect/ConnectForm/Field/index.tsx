@@ -1,6 +1,5 @@
 import React from "react"
 import { Input, InputProps } from "../../../../Input"
-import styles from "./index.module.css"
 
 export type FieldProps = InputProps & {
   label: string
@@ -12,7 +11,7 @@ export const Field: React.FC<FieldProps> = ({
     ...rest
 }) => {
     return (
-        <div className={styles.container}>
+        <div className="db-explorer-field">
             <label htmlFor={id}>{label}:</label>
             <Input
                 {...rest}

@@ -1,6 +1,4 @@
 import { useState } from "react"
-import tableStyles from "../../index.module.css"
-import styles from "./index.module.css"
 import { Input } from "../../../../../Input"
 import React from "react"
 
@@ -37,7 +35,7 @@ export const EditableCell: React.FC<Props> = ({ onEdit, value }) => {
 
     return (
         <td
-            className={isEditing ? styles.inputCell : tableStyles.hoverableCell}
+            className={isEditing ? "db-explorer-input-cell" : "db-explorer-hoverable-cell"}
             onFocus={() => { setIsEditing(true) }}
             tabIndex={0}
         >
