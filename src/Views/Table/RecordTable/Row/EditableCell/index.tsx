@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Input } from "../../../../../Input"
 import React from "react"
+import "./index.css"
 
 type Props = {
     onEdit?: (newValue: string) => void

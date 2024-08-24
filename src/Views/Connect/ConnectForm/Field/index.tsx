@@ -1,5 +1,6 @@
 import React from "react"
 import { Input, InputProps } from "../../../../Input"
+import "./index.css"
 
 export type FieldProps = InputProps & {
   label: string

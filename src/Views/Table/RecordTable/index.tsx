@@ -3,6 +3,7 @@ import { RECORD_TABLE_ACTION, RecordAction, SORT_MODE } from "./consts"
 import { useSorting } from "./hooks"
 import { Row } from "./Row"
 import React from "react"
+import "./index.css"
 
 type Props = {
     entries: Array<Record<string, string>>

@@ -1,6 +1,7 @@
 import { EditableCell } from "./EditableCell"
 import { RECORD_TABLE_ACTION, RecordAction } from "../consts"
 import React from "react"
+import "./index.css"
 
 type Props = {
     onRowAction: (action: RecordAction) => void

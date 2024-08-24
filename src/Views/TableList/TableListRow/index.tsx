@@ -1,6 +1,7 @@
 import React from "react"
 import { TABLE_LIST_ACTION, TableAction } from "../const"
 import { Button } from "../../../Button"
+import "./index.css"
 
 export type TableListRowProps = {
     onTableAction: (data: TableAction) => void
