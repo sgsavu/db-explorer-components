@@ -13,3 +13,5 @@ export * from "./Views/Table/RecordTable/consts"
 export * from "./Views/TableList"
 export * from "./Views/TableList/index"
 export * from "./Views/TableList/const"
+
+export * from "./Button/index"
