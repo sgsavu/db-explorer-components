@@ -32,7 +32,7 @@ export const RecentConnections: React.FC<RecentConnectionsProps> = ({
                     <div>
                         {login.id}
                     </div>
-                    {login.address} -
+                    {login.host} -
                     {login.dbName} -
                     {login.user} -
                     {login.password[0]}

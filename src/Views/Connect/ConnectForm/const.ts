@@ -1,6 +1,8 @@
 export type SQLConnectionInfo = {
-    address: string
     dbName: string
-    user: string
+    host: string
     password: string
+    port: string
+    type: string
+    user: string
 }

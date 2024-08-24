@@ -13,13 +13,9 @@ export const ConnectForm: React.FC<ConnectFormProps> = ({ onConnect }) => {
         e.preventDefault()
 
         const formData = new FormData(e.target as HTMLFormElement)
-        const formEntries = Object.fromEntries(formData.entries()) as SQLConnectionInfo & { port: string }
+        const formEntries = Object.fromEntries(formData.entries()) as SQLConnectionInfo
 
-        formEntries.address = formEntries.address + ":" + formEntries.port
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { port, ...connectionInfo } = formEntries
-
-        onConnect(connectionInfo)
+        onConnect({...formEntries, type: 'mysql'})
     }
 
     return (
@@ -27,9 +23,9 @@ export const ConnectForm: React.FC<ConnectFormProps> = ({ onConnect }) => {
             <form onSubmit={onSubmit}>
                 <Field
                     defaultValue="127.0.0.1"
-                    id='address'
-                    label='Address'
-                    name='address'
+                    id='host'
+                    label='Host'
+                    name='host'
                     required
                 />
 
