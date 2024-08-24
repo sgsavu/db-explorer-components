@@ -17,9 +17,8 @@
     "build-storybook": "storybook build"
   },
   "keywords": [
-    "subject",
-    "observable",
-    "subscriber"
+    "components",
+    "db-explorer"
   ],
   "author": "Jibreel Savu",
   "license": "GPL-3.0-only",
