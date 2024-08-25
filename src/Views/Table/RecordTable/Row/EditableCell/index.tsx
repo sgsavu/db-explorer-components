@@ -15,7 +15,7 @@ export const EditableCell: React.FC<Props> = ({ onEdit, value }) => {
         setIsEditing(false)
 
         const newValue = e.target.value
-        if (newValue === value) { return }
+        if (newValue === `${value}`) { return }
 
         onEdit?.(newValue)
     }
