@@ -1,0 +1,4 @@
+.db-explorer-recent-connections-container {
+    display: flex;
+    flex-direction: column;
+}

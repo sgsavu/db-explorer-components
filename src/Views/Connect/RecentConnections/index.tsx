@@ -24,22 +24,24 @@ export const RecentConnections: React.FC<RecentConnectionsProps> = ({
     return (
         <>
             <h3>Recent connections</h3>
-            {recentConnections.map(login =>
-                <Button
-                    key={login.id}
-                    onClick={() => onRecentLogin(login)}
-                >
-                    <div>
-                        {login.id}
-                    </div>
-                    {login.host} -
-                    {login.dbName} -
-                    {login.user} -
-                    {login.password[0]}
-                    {login.password[1]}
-                    {"*".repeat(login.password.length - 2)}
-                </Button>
-            )}
+            <div className="db-explorer-recent-connections-container">
+                {recentConnections.map(login =>
+                    <Button
+                        key={login.id}
+                        onClick={() => onRecentLogin(login)}
+                    >
+                        <div>
+                            {login.id}
+                        </div>
+                        {login.host} -
+                        {login.dbName} -
+                        {login.user} -
+                        {login.password[0]}
+                        {login.password[1]}
+                        {"*".repeat(login.password.length - 2)}
+                    </Button>
+                )}
+            </div>
         </>
     )
 }
