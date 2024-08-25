@@ -63,8 +63,7 @@ export const RecordTable: React.FC<Props> = ({
                 if (!filter) { return true }
 
                 const dynamicRegex = new RegExp(filter, "i");
-
-                return value.match(dynamicRegex)
+                return dynamicRegex.test(value)
             })
         )
     , [sorted, filters, columns])
