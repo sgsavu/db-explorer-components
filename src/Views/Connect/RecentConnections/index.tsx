@@ -2,6 +2,7 @@ import React from "react"
 import { ConnectFormProps } from "../ConnectForm"
 import { RecentSQLConnectionInfo } from "./const"
 import { Button } from "../../../Button"
+import "./index.css"
 
 export type RecentConnectionsProps = {
     onConnect: ConnectFormProps["onConnect"]
