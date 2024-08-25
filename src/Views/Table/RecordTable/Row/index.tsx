@@ -19,7 +19,7 @@ export const Row: React.FC<Props> = ({
         <tr>
             {values.map((value, columnIndex) =>
                 <EditableCell
-                    onEdit={newValue => onRowAction({ action: RECORD_TABLE_ACTION.DUPLICATE, columnName: columns[columnIndex], columnValue: newValue, record: row})}
+                    onEdit={newValue => onRowAction({ action: RECORD_TABLE_ACTION.EDIT, columnName: columns[columnIndex], columnValue: newValue, record: row})}
                     key={columnIndex}
                     value={value}
                 />
